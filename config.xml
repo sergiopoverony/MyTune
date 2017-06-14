@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mad.muzzles" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>AppName</name>
+    <description>App description</description>
+    <author email="sergiopoverony@gmail.com" href="http://mult-art.ru">
+        Mult-Art Team and SergioPoverony
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="Orientation" value="landscape" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="25" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="android-signed" value="true" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="BackgroundColor" value="0xff000000" />
+    <icon density="ldpi" height="36" platform="android" src="package-assets/logo.png" width="36" />
+    <icon density="mdpi" height="48" platform="android" src="package-assets/logo.png" width="48" />
+    <icon density="hdpi" height="72" platform="android" src="package-assets/logo.png" width="72" />
+    <icon density="xhdpi" height="96" platform="android" src="package-assets/logo.png" width="96" />
+    <engine name="android" spec="^6.2.3" />
+    <plugin name="cordova-google-play-services" spec="^25.0.0" />
+    <plugin name="cordova-plugin-ad-admob" spec="^1.0.118" />
+    <plugin name="cordova-plugin-ad-admob-sdk" spec="^1.0.1" />
+    <plugin name="cordova-plugin-crosswalk-webview" spec="^2.3.0">
+        <variable name="XWALK_VERSION" value="23+" />
+        <variable name="XWALK_LITEVERSION" value="xwalk_core_library_canary:17+" />
+        <variable name="XWALK_COMMANDLINE" value="--in-process-gpu --disable-pull-to-refresh-effect --enable-canvas-2d-dynamic-rendering-mode-switching" />
+        <variable name="XWALK_MODE" value="embedded" />
+        <variable name="XWALK_MULTIPLEAPK" value="true" />
+    </plugin>
+    <plugin name="cordova-plugin-google-analytics" spec="^1.8.2" />
+    <plugin name="cordova-plugin-localization-strings" spec="^1.0.1" />
+    <plugin name="cordova-plugin-screen-uility" spec="0.0.0" />
+    <plugin name="cordova-plugin-vibration" spec="^2.1.5" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
+</widget>
